@@ -16,10 +16,10 @@ require('babel-polyfill');
 
 var provider;
 var HDWalletProvider = require('truffle-hdwallet-provider');
-var mnemonic = 'lounge frown siren business industry grain pill budget blast endorse office forget';
+var mnemonic = '';
 
 if (!process.env.SOLIDITY_COVERAGE){
-  provider = new HDWalletProvider(mnemonic, 'https://ropsten.infura.io/PxuOKg5D1sKUNQVH9RMq',4)
+  provider = new HDWalletProvider(mnemonic, 'https://ropsten.infura.io/',4)
 }
 
 
